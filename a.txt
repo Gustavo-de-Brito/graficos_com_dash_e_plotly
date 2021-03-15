@@ -1,1 +1,2 @@
-Testano git
+Testando git
+ clone
