@@ -58,8 +58,8 @@ def separa_dados(nome, valor):
 
 @app.callback(
     Output(component_id='grafico', component_property= 'figure'), # Define-se o id de saída e seu tipo
-    [Input(component_id='filtro', component_property='value')], # Definine-se o id do filtro e seu tipo
-    [Input(component_id='filtro_2', component_property='value')] # Definine-se o id do filtro e seu tipo
+    Input(component_id='filtro', component_property='value'), # Definine-se o id do filtro e seu tipo
+    Input(component_id='filtro_2', component_property='value') # Definine-se o id do filtro e seu tipo
 )
 
 def grafico_1(argumento, maior_menor): # Os comandos que geram o gráfico serão colocados em uma função que receberá um dos valores definidos no filtro, no nosso exemplo "Produto A" ou "Produto B"
