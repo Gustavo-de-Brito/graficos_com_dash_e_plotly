@@ -37,9 +37,9 @@ app.layout = html.Div([
 def separa_dados(nome, valor):
     porcentagens_filtradas = []
     meses_filtrados = []
-    if nome == opcoes[0]:
+    if nome == "Produto A":
         y = produto_a
-    elif nome == opcoes[1]:
+    elif nome == "Produto B":
         y = produto_b
     if valor == ">50":
         for porcentagem, data in zip(y, mes):
