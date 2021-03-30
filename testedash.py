@@ -63,12 +63,9 @@ def separa_dados(nome, valor):
 )
 
 def grafico_1(argumento, maior_menor): # Os comandos que geram o gráfico serão colocados em uma função que receberá um dos valores definidos no filtro, no nosso exemplo "Produto A" ou "Produto B"
-    print(argumento)
-    print(maior_menor)
     dados_filtrados = separa_dados(argumento, maior_menor) # O argumento escolhido ("Produto A" ou "Produtro B") é colocado como parâmetro para a filtragem de dados pela função separa dados
     eixo_x = dados_filtrados[1]
     eixo_y = dados_filtrados[0]
-    print(eixo_x)
     # criação de uma lista chamada "linha1" que será a primeira linha do gráfico
     linha1 = go.Scatter( # todos os dados dentro do comando go.Scatter() receberão uma série de informações para gerar linha
         x = eixo_x,
